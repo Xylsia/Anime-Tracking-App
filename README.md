@@ -2,7 +2,7 @@
  
 Basic android application i made for an university project.
 
-It is written in Java that is using open-source REST API https://jikan.moe/ and it is using SQLite local storage.
+It is written in Java, it is using open-source REST API https://jikan.moe/ and SQLite as a local storage.
 
 ![qemu-system-i386_dwJxRnqtRO](https://user-images.githubusercontent.com/74460526/154958421-70991699-1690-4811-8ec9-c01203b968ae.png) ![qemu-system-i386_rkNQaukOxz](https://user-images.githubusercontent.com/74460526/154958468-2b17d42b-9720-410b-b736-bfb5e4e6b029.png) 
 

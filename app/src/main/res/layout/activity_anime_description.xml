@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3A3542"
+    android:background="@color/background"
     tools:context=".AnimeDescription">
 
     <ScrollView
@@ -19,8 +19,8 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="246dp"
-                android:layout_height="316dp"
+                android:layout_width="287dp"
+                android:layout_height="353dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="15sp"
                 tools:srcCompat="@tools:sample/avatars" />
@@ -38,7 +38,7 @@
                 android:layout_marginBottom="50sp"
                 android:gravity="center"
                 android:text="Anime Title"
-                android:textColor="#60BF63"
+                android:textColor="@color/title"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -53,7 +53,7 @@
                 android:layout_marginRight="8sp"
                 android:gravity="center"
                 android:text="Synopsis:"
-                android:textColor="#8BC34A"
+                android:textColor="@color/title"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
@@ -69,7 +69,7 @@
                 android:layout_marginBottom="8sp"
                 android:gravity="center"
                 android:text="synopsis here.."
-                android:textColor="#60BF63" />
+                android:textColor="@color/text" />
 
             <TextView
                 android:id="@+id/textView9"
@@ -82,7 +82,7 @@
                 android:layout_marginRight="8sp"
                 android:gravity="center"
                 android:text="Episodes:"
-                android:textColor="#8BC34A"
+                android:textColor="@color/title"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
@@ -98,7 +98,7 @@
                 android:layout_marginBottom="8sp"
                 android:gravity="center"
                 android:text="episodes here.."
-                android:textColor="#60BF63" />
+                android:textColor="@color/text" />
 
             <TextView
                 android:id="@+id/textView11"
@@ -111,7 +111,7 @@
                 android:layout_marginRight="8sp"
                 android:gravity="center"
                 android:text="Score:"
-                android:textColor="#8BC34A"
+                android:textColor="@color/title"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
@@ -127,7 +127,7 @@
                 android:layout_marginBottom="8sp"
                 android:gravity="center"
                 android:text="score here.."
-                android:textColor="#60BF63" />
+                android:textColor="@color/text" />
 
             <TextView
                 android:id="@+id/textView13"
@@ -140,7 +140,7 @@
                 android:layout_marginRight="8sp"
                 android:gravity="center"
                 android:text="Type:"
-                android:textColor="#8BC34A"
+                android:textColor="@color/title"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
@@ -156,7 +156,7 @@
                 android:layout_marginBottom="8sp"
                 android:gravity="center"
                 android:text="type here.."
-                android:textColor="#60BF63" />
+                android:textColor="@color/text" />
 
             <TextView
                 android:id="@+id/textView15"
@@ -169,7 +169,7 @@
                 android:layout_marginRight="8sp"
                 android:gravity="center"
                 android:text="Rated:"
-                android:textColor="#8BC34A"
+                android:textColor="@color/title"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
@@ -184,7 +184,7 @@
                 android:layout_marginRight="8sp"
                 android:gravity="center"
                 android:text="rating here.."
-                android:textColor="#60BF63" />
+                android:textColor="@color/text" />
 
             <TextView
                 android:id="@+id/txtUrl"
@@ -203,8 +203,8 @@
                 android:layout_marginBottom="10sp"
                 android:gravity="center"
                 android:text="Plan to Watch"
-                android:textColor="#60BF63"
-                app:backgroundTint="#554C63" />
+                android:textColor="@color/title"
+                app:backgroundTint="@color/background_lighter" />
 
             <Button
                 android:id="@+id/buttonWatching"
@@ -214,8 +214,8 @@
                 android:layout_marginBottom="10sp"
                 android:gravity="center"
                 android:text="Watching"
-                android:textColor="#60BF63"
-                app:backgroundTint="#554C63" />
+                android:textColor="@color/title"
+                app:backgroundTint="@color/background_lighter" />
 
             <Button
                 android:id="@+id/buttonFinished"
@@ -225,8 +225,8 @@
                 android:layout_marginBottom="10sp"
                 android:gravity="center"
                 android:text="Finished"
-                android:textColor="#60BF63"
-                app:backgroundTint="#554C63" />
+                android:textColor="@color/title"
+                app:backgroundTint="@color/background_lighter" />
 
             <Button
                 android:id="@+id/buttonWeb"
@@ -236,8 +236,8 @@
                 android:layout_marginBottom="10sp"
                 android:gravity="center"
                 android:text="View on Website"
-                android:textColor="#60BF63"
-                app:backgroundTint="#554C63" />
+                android:textColor="@color/title"
+                app:backgroundTint="@color/background_lighter" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

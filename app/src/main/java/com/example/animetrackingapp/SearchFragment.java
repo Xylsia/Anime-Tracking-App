@@ -33,7 +33,7 @@ public class SearchFragment extends Fragment implements View.OnClickListener{
     ConstraintLayout item;
     SearchView svSearch;
     LinearLayout mainScrollView;
-    String url = "https://api.jikan.moe/v3/search/anime?q=&order_by=members&sort=desc";
+//    String url = "https://api.jikan.moe/v3/search/anime?q=" + ;
 
 
     @Override
@@ -49,7 +49,8 @@ public class SearchFragment extends Fragment implements View.OnClickListener{
 
 
     @SuppressLint("HandlerLeak")
-    private void InitAnime(View v, String search){
+    private void InitAnime(View v, String url){
+
         Api.getJSON(url, new ReadDataHandler(){
             @Override
             public void handleMessage( Message msg) {
@@ -63,13 +64,11 @@ public class SearchFragment extends Fragment implements View.OnClickListener{
                     mainScrollView = v.findViewById(R.id.mainScrollView);
                     LayoutInflater inflater = (LayoutInflater)getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-                    TextView labelJson = v.findViewById(R.id.labelJson);
-                    labelJson.setText("");
+//                    TextView labelJson = v.findViewById(R.id.labelJson);
+//                    labelJson.setText("");
 
                     for(AnimeModel a : anime){
-                        if(search != null && !a.getTitle().toLowerCase().contains(search.toLowerCase())){
-                            continue;
-                        }
+
                         item = (ConstraintLayout) inflater.inflate(R.layout.one_anime, null);
                         item.setOnClickListener(SearchFragment.this);
 
@@ -94,13 +93,13 @@ public class SearchFragment extends Fragment implements View.OnClickListener{
                         Picasso.get().load(a.getImage_url()).into(imageView);
 
                         mainScrollView.addView(item);
-                        labelJson.setVisibility(View.GONE);
+//                        labelJson.setVisibility(View.GONE);
                     }
                 }
                 catch(Exception e){ }
             }
         });
-        ((TextView)v.findViewById(R.id.labelJson)).setText("Loading...");
+//        ((TextView)v.findViewById(R.id.labelJson)).setText("Loading...");
     }
 
     private void SearchBar(){
@@ -109,8 +108,17 @@ public class SearchFragment extends Fragment implements View.OnClickListener{
             @Override
             public boolean onQueryTextSubmit(String query) {
 
+                String url = "https://api.jikan.moe/v3/search/anime?q=" + query;
+
+                mainScrollView = v.findViewById(R.id.mainScrollView);
+//                mainScrollView.removeAllViews();
+                int children = mainScrollView.getChildCount();
+                if (children > 1) {
+                    mainScrollView.removeViews(1, children - 1);
+                }
+
                 svSearch.clearFocus();
-                InitAnime(v, query);
+                InitAnime(v, url);
                 return false;
             }
 

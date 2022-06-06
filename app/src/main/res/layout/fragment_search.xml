@@ -20,7 +20,7 @@
                 android:id="@+id/svSearch"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#554C63"
+                android:background="@color/background_lighter"
                 android:queryHint="Type name of the anime.." />
 
             <TextView

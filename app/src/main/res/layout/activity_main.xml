@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3A3542"
+    android:background="@color/background"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -23,7 +23,9 @@
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#554C63"
+        android:background="@color/background_lighter"
+        app:itemRippleColor="@color/title"
+        app:itemTextColor="@color/title"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

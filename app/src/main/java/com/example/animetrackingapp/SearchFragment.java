@@ -23,6 +23,7 @@ import com.squareup.picasso.Picasso;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.net.URLEncoder;
 import java.util.LinkedList;
 
 public class SearchFragment extends Fragment implements View.OnClickListener{
@@ -64,9 +65,6 @@ public class SearchFragment extends Fragment implements View.OnClickListener{
                     mainScrollView = v.findViewById(R.id.mainScrollView);
                     LayoutInflater inflater = (LayoutInflater)getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-//                    TextView labelJson = v.findViewById(R.id.labelJson);
-//                    labelJson.setText("");
-
                     for(AnimeModel a : anime){
 
                         item = (ConstraintLayout) inflater.inflate(R.layout.one_anime, null);
@@ -93,13 +91,11 @@ public class SearchFragment extends Fragment implements View.OnClickListener{
                         Picasso.get().load(a.getImage_url()).into(imageView);
 
                         mainScrollView.addView(item);
-//                        labelJson.setVisibility(View.GONE);
                     }
                 }
                 catch(Exception e){ }
             }
         });
-//        ((TextView)v.findViewById(R.id.labelJson)).setText("Loading...");
     }
 
     private void SearchBar(){
@@ -108,14 +104,17 @@ public class SearchFragment extends Fragment implements View.OnClickListener{
             @Override
             public boolean onQueryTextSubmit(String query) {
 
-                String url = "https://api.jikan.moe/v3/search/anime?q=" + query;
+                String encodedQuery = URLEncoder.encode(query);
+
+                String url = "https://api.jikan.moe/v3/search/anime?q=" + encodedQuery;
 
                 mainScrollView = v.findViewById(R.id.mainScrollView);
-//                mainScrollView.removeAllViews();
                 int children = mainScrollView.getChildCount();
                 if (children > 1) {
                     mainScrollView.removeViews(1, children - 1);
                 }
+
+                System.out.println(url);
 
                 svSearch.clearFocus();
                 InitAnime(v, url);

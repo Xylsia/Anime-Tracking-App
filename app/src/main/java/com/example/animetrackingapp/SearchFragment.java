@@ -34,8 +34,6 @@ public class SearchFragment extends Fragment implements View.OnClickListener{
     ConstraintLayout item;
     SearchView svSearch;
     LinearLayout mainScrollView;
-//    String url = "https://api.jikan.moe/v3/search/anime?q=" + ;
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

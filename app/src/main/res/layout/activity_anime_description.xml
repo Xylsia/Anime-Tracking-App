@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@color/white"
     tools:context=".AnimeDescription">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="129dp">
 
         <LinearLayout
             android:id="@+id/mainScrollView"
@@ -38,8 +40,8 @@
                 android:layout_marginBottom="50sp"
                 android:gravity="center"
                 android:text="Anime Title"
-                android:textColor="@color/title"
-                android:textSize="20sp"
+                android:textColor="@color/blue3"
+                android:textSize="25sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -53,13 +55,13 @@
                 android:layout_marginRight="8sp"
                 android:gravity="center"
                 android:text="Synopsis:"
-                android:textColor="@color/title"
-                android:textSize="16sp"
+                android:textColor="@color/blue3"
+                android:textSize="18sp"
                 android:textStyle="italic" />
 
             <TextView
                 android:id="@+id/txtSynopsis"
-                android:layout_width="match_parent"
+                android:layout_width="339dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginStart="16sp"
@@ -69,7 +71,8 @@
                 android:layout_marginBottom="8sp"
                 android:gravity="center"
                 android:text="synopsis here.."
-                android:textColor="@color/text" />
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/textView9"
@@ -82,8 +85,8 @@
                 android:layout_marginRight="8sp"
                 android:gravity="center"
                 android:text="Episodes:"
-                android:textColor="@color/title"
-                android:textSize="16sp"
+                android:textColor="@color/blue3"
+                android:textSize="18sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -98,7 +101,8 @@
                 android:layout_marginBottom="8sp"
                 android:gravity="center"
                 android:text="episodes here.."
-                android:textColor="@color/text" />
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/textView11"
@@ -111,8 +115,8 @@
                 android:layout_marginRight="8sp"
                 android:gravity="center"
                 android:text="Score:"
-                android:textColor="@color/title"
-                android:textSize="16sp"
+                android:textColor="@color/blue3"
+                android:textSize="18sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -127,7 +131,8 @@
                 android:layout_marginBottom="8sp"
                 android:gravity="center"
                 android:text="score here.."
-                android:textColor="@color/text" />
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/textView13"
@@ -140,8 +145,8 @@
                 android:layout_marginRight="8sp"
                 android:gravity="center"
                 android:text="Type:"
-                android:textColor="@color/title"
-                android:textSize="16sp"
+                android:textColor="@color/blue3"
+                android:textSize="18sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -156,7 +161,8 @@
                 android:layout_marginBottom="8sp"
                 android:gravity="center"
                 android:text="type here.."
-                android:textColor="@color/text" />
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/textView15"
@@ -169,8 +175,8 @@
                 android:layout_marginRight="8sp"
                 android:gravity="center"
                 android:text="Rated:"
-                android:textColor="@color/title"
-                android:textSize="16sp"
+                android:textColor="@color/blue3"
+                android:textSize="18sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -184,7 +190,8 @@
                 android:layout_marginRight="8sp"
                 android:gravity="center"
                 android:text="rating here.."
-                android:textColor="@color/text" />
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/txtUrl"
@@ -203,8 +210,8 @@
                 android:layout_marginBottom="10sp"
                 android:gravity="center"
                 android:text="Plan to Watch"
-                android:textColor="@color/title"
-                app:backgroundTint="@color/background_lighter" />
+                android:textColor="@color/white"
+                app:backgroundTint="@color/blue2" />
 
             <Button
                 android:id="@+id/buttonWatching"
@@ -214,8 +221,8 @@
                 android:layout_marginBottom="10sp"
                 android:gravity="center"
                 android:text="Watching"
-                android:textColor="@color/title"
-                app:backgroundTint="@color/background_lighter" />
+                android:textColor="@color/white"
+                app:backgroundTint="@color/blue2" />
 
             <Button
                 android:id="@+id/buttonFinished"
@@ -225,8 +232,8 @@
                 android:layout_marginBottom="10sp"
                 android:gravity="center"
                 android:text="Finished"
-                android:textColor="@color/title"
-                app:backgroundTint="@color/background_lighter" />
+                android:textColor="@color/white"
+                app:backgroundTint="@color/blue2" />
 
             <Button
                 android:id="@+id/buttonWeb"
@@ -236,8 +243,8 @@
                 android:layout_marginBottom="10sp"
                 android:gravity="center"
                 android:text="View on Website"
-                android:textColor="@color/title"
-                app:backgroundTint="@color/background_lighter" />
+                android:textColor="@color/white"
+                app:backgroundTint="@color/blue2" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

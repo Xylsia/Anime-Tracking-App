@@ -3,9 +3,9 @@
 
     <item
         android:id="@+id/nav_home"
+        android:background="@color/blue2"
         android:icon="@drawable/ic_baseline_home_24"
-        android:title="Home"
-        android:background="@color/title"/>
+        android:title="Home" />
 
     <item
         android:id="@+id/nav_search"

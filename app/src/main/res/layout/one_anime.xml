@@ -11,12 +11,12 @@
     android:layout_marginEnd="10sp"
     android:layout_marginRight="10sp"
     android:layout_marginBottom="10sp"
-    android:background="@color/background">
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/animeImg"
-        android:layout_width="147dp"
-        android:layout_height="176dp"
+        android:layout_width="130dp"
+        android:layout_height="175dp"
         android:layout_marginStart="6dp"
         android:layout_marginLeft="6dp"
         android:layout_marginTop="12dp"
@@ -37,8 +37,8 @@
         android:layout_marginRight="8dp"
         android:gravity="center"
         android:text="Title"
-        android:textColor="@color/title"
-        android:textSize="17sp"
+        android:textColor="@color/blue3"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -56,8 +56,8 @@
         android:layout_marginRight="20dp"
         android:gravity="right"
         android:text="Episodes:"
-        android:textColor="@color/text"
-        android:textSize="15sp"
+        android:textColor="@color/blue3"
+        android:textSize="14sp"
         app:layout_constraintEnd_toStartOf="@+id/textEpisode"
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toEndOf="@+id/animeImg"
@@ -72,8 +72,8 @@
         android:layout_marginRight="8dp"
         android:gravity="center"
         android:text="Episode"
-        android:textColor="@color/text"
-        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -88,8 +88,8 @@
         android:layout_marginRight="20dp"
         android:gravity="right"
         android:text="Score:"
-        android:textColor="@color/text"
-        android:textSize="15sp"
+        android:textColor="@color/blue3"
+        android:textSize="14sp"
         app:layout_constraintEnd_toStartOf="@+id/textEpisode"
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toEndOf="@+id/animeImg"
@@ -104,8 +104,8 @@
         android:layout_marginRight="8dp"
         android:gravity="center"
         android:text="Score"
-        android:textColor="@color/text"
-        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -120,8 +120,8 @@
         android:layout_marginRight="20dp"
         android:gravity="right"
         android:text="Type:"
-        android:textColor="@color/text"
-        android:textSize="15sp"
+        android:textColor="@color/blue3"
+        android:textSize="14sp"
         app:layout_constraintEnd_toStartOf="@+id/textEpisode"
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toEndOf="@+id/animeImg"
@@ -136,8 +136,8 @@
         android:layout_marginRight="8dp"
         android:gravity="center"
         android:text="Type"
-        android:textColor="@color/text"
-        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -152,8 +152,8 @@
         android:layout_marginRight="20dp"
         android:gravity="right"
         android:text="Rated:"
-        android:textColor="@color/text"
-        android:textSize="15sp"
+        android:textColor="@color/blue3"
+        android:textSize="14sp"
         app:layout_constraintEnd_toStartOf="@+id/textEpisode"
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toEndOf="@+id/animeImg"
@@ -168,8 +168,8 @@
         android:layout_marginRight="8dp"
         android:gravity="center"
         android:text="Rating"
-        android:textColor="@color/text"
-        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -205,7 +205,7 @@
         android:layout_width="match_parent"
         android:layout_height="8sp"
         android:layout_marginTop="12dp"
-        android:background="#3A3542"
+        android:background="@color/blue1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/animeImg" />
 </androidx.constraintlayout.widget.ConstraintLayout>

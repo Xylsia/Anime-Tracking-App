@@ -77,7 +77,7 @@ public class PlanToWatchFragment extends Fragment  implements View.OnClickListen
                     65
             );
             btnRemove.setLayoutParams(params);
-            btnRemove.setBackgroundResource(R.color.purple_500);
+            btnRemove.setBackgroundResource(R.color.blue2);
             btnRemove.setTextColor(getResources().getColor(R.color.white));
             btnRemove.setTextSize(10);
             btnRemove.setText("Remove");

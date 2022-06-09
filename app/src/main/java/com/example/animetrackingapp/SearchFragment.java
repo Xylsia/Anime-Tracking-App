@@ -114,8 +114,6 @@ public class SearchFragment extends Fragment implements View.OnClickListener{
                     mainScrollView.removeViews(1, children - 1);
                 }
 
-                System.out.println(url);
-
                 svSearch.clearFocus();
                 InitAnime(v, url);
                 return false;

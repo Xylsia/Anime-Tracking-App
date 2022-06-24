@@ -20,7 +20,7 @@ public class HomeFragment extends Fragment{
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        v = inflater.inflate(R.layout.fragment_mylist, container, false);
+        v = inflater.inflate(R.layout.fragment_home, container, false);
         viewPager = v.findViewById(R.id.viewPager);
         tabLayout = v.findViewById(R.id.tabLayout);
 

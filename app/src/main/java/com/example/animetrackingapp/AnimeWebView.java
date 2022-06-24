@@ -24,11 +24,9 @@ public class AnimeWebView extends AppCompatActivity {
         getSupportActionBar().hide();
 
         setContentView(R.layout.activity_anime_web_view);
-
         initComponents();
 
         webView = findViewById(R.id.webView);
-
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
@@ -38,7 +36,6 @@ public class AnimeWebView extends AppCompatActivity {
 
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl(url);
-
     }
 
     private void initComponents() {

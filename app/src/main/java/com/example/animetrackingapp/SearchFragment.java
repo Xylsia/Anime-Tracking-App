@@ -43,9 +43,7 @@ public class SearchFragment extends Fragment implements View.OnClickListener{
 
         SearchBar();
         return v;
-
     }
-
 
     @SuppressLint("HandlerLeak")
     private void InitAnime(View v, String url){
@@ -59,7 +57,6 @@ public class SearchFragment extends Fragment implements View.OnClickListener{
                     JSONObject jsonObject = new JSONObject(answer);
                     JSONArray jsonArray = jsonObject.getJSONArray("results");
                     LinkedList<AnimeModel> anime = AnimeModel.parseJSONArray(jsonArray);
-
                     mainScrollView = v.findViewById(R.id.mainScrollView);
                     LayoutInflater inflater = (LayoutInflater)getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
@@ -103,7 +100,6 @@ public class SearchFragment extends Fragment implements View.OnClickListener{
             public boolean onQueryTextSubmit(String query) {
 
                 String encodedQuery = URLEncoder.encode(query);
-
                 String url = "https://api.jikan.moe/v3/search/anime?q=" + encodedQuery;
 
                 mainScrollView = v.findViewById(R.id.mainScrollView);
@@ -135,7 +131,6 @@ public class SearchFragment extends Fragment implements View.OnClickListener{
                 TextView textRating = v.findViewById(R.id.textRating);
                 TextView textSynopsis = v.findViewById(R.id.textSynopsis);
                 TextView textUrl = v.findViewById(R.id.textUrl);
-
                 TextView textImage = v.findViewById(R.id.textImage);
 
                 String title = textTitle.getText().toString();
@@ -145,7 +140,6 @@ public class SearchFragment extends Fragment implements View.OnClickListener{
                 String rating = textRating.getText().toString();
                 String synopsis = textSynopsis.getText().toString();
                 String url = textUrl.getText().toString();
-
                 String image = textImage.getText().toString();
 
                 Intent intent = new Intent(getActivity(), AnimeDescription.class);
@@ -158,7 +152,6 @@ public class SearchFragment extends Fragment implements View.OnClickListener{
                 extras.putString("rating", rating);
                 extras.putString("synopsis", synopsis);
                 extras.putString("url", url);
-
                 extras.putString("image", image);
 
                 intent.putExtras(extras);

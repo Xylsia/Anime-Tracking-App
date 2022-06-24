@@ -2,4 +2,4 @@
  
 Basic android application i made for an university project.
 
-It is written in Java, it is using open-source REST API https://jikan.moe/ and SQLite as a local storage.
+It is written in Java and is using open-source REST API https://jikan.moe/ and SQLite as a local storage.
